@@ -1,0 +1,79 @@
+<div class="container-fluid">
+    <div class="row mr-0 ml-0">
+        <div class="col-sm-3 border-bottom">
+            <span class="fs-5">Tools</span>
+            <ul class="nav flex-column">
+                <li class="nav-item" *ngFor="let tool of tools">
+                    <a class="nav-link" href="/projects#{{tool.id}}">{{tool.name}}</a>
+                </li>
+            </ul>
+            <span class="fs-5">Projects</span>
+            <ul class="nav flex-column">
+                <li class="nav-item" *ngFor="let project of projects">
+                    <a class="nav-link" href="/projects#{{project.id}}">{{project.name}}</a>
+                </li>
+            </ul>
+            <span class="fs-5">Collaborative Projects</span>
+            <ul class="nav flex-column">
+                <li class="nav-item" *ngFor="let collaborativeProject of collaborativeProjects">
+                    <a class="nav-link" href="/projects#{{collaborativeProject.id}}">{{collaborativeProject.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <div class="tab-content">
+                <div *ngFor="let tool of tools">
+                    <div id="{{tool.id}}" class="border-bottom">
+                        <span class="fs-5">{{tool.name}}</span>
+                        <p class="fs-6">
+                            <strong>Description:</strong>
+                        </p>
+                        <p class="fs-6">{{tool.description}}</p>
+                        <p class="fs-6">
+                            <strong>Link:</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="{{tool.repository}}">GitHub Repository</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div *ngFor="let project of projects">
+                    <div id="{{project.id}}" class="border-bottom">
+                        <span class="fs-5">{{project.name}}</span>
+                        <p class="fs-6">
+                            <strong>Description:</strong>
+                        </p>
+                        <p class="fs-6">{{project.description}}</p>
+                        <p class="fs-6">
+                            <strong>Link:</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="{{project.repository}}">GitHub Repository</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div *ngFor="let collaborativeProject of collaborativeProjects">
+                    <div id="{{collaborativeProject.id}}" class="border-bottom">
+                        <span class="fs-5">{{collaborativeProject.name}}</span>
+                        <p class="fs-6">
+                            <strong>Description:</strong>
+                        </p>
+                        <p class="fs-6">{{collaborativeProject.description}}</p>
+                        <p class="fs-6">
+                            <strong>Link:</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="{{collaborativeProject.repository}}">GitHub Repository</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

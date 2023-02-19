@@ -1,0 +1,8 @@
+[
+    {
+        "id": "Project-Template",
+        "name": "Project Template",
+        "description": "Project Template that can be used as a starting project.",
+        "repository": "https://github.com/mgiordano95/project-template" 
+    }
+]

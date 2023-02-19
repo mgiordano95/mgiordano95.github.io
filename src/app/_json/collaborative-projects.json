@@ -1,0 +1,14 @@
+[
+    {
+        "id": "Bank-Customer-Churn-Prediction",
+        "name": "Bank Customer Churn Prediction",
+        "description": "A project to predict bank customer churn for the Artificial Intelligence and Machine Learning exam.",
+        "repository": "https://github.com/federicoder/bankproject" 
+    },
+    {
+        "id": "PIV-Monitoring-System",
+        "name": "PIV Monitoring System",
+        "description": "Pollution monitoring system inside vehicles for the Internet of Things exam.",
+        "repository": "https://github.com/federicoder/piv" 
+    }
+]
