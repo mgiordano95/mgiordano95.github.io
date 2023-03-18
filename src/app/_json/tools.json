@@ -4,5 +4,11 @@
         "name": "Project Template",
         "description": "Project Template that can be used as a starting project.",
         "repository": "https://github.com/mgiordano95/project-template" 
+    },
+    {
+        "id": "Awesome-Basic-Frontend-Development",
+        "name": "Awesome Basic Frontend Development",
+        "description": "Another collection of resources for frontend web developers.",
+        "repository": "https://github.com/mgiordano95/awesome-basic-frontend-development"
     }
 ]

@@ -1,0 +1,32 @@
+<mat-drawer-container class="drawer-container " autosize>
+    <mat-drawer #drawer mode="side" disableClose="true" opened="true">
+        
+        <div class="d-flex justify-content-center">
+            <button *ngIf="!isExpanded" mat-mini-fab (click)="isExpanded = !isExpanded" class="sidenav-button">
+                <mat-icon aria-label="Menu">navigate_next</mat-icon>
+            </button>
+            <button *ngIf="isExpanded" mat-mini-fab (click)="isExpanded = !isExpanded" class="sidenav-button">
+                <mat-icon aria-label="Menu">navigate_before</mat-icon>
+            </button>
+        </div>
+        
+        <mat-nav-list>
+            <mat-list-item routerLink="home">
+                <mat-icon matListItemIcon matTooltip="Home" matTooltipPosition="right">person</mat-icon>
+                <span class="me-4" matListItemTitle *ngIf="isExpanded">Home</span>
+            </mat-list-item>
+            <mat-list-item routerLink="projects">
+                <mat-icon matListItemIcon matTooltip="Projects" matTooltipPosition="right">folder</mat-icon>
+                <span class="me-4" matListItemTitle *ngIf="isExpanded">Projects</span>
+            </mat-list-item>
+            <mat-list-item routerLink="contact">
+                <mat-icon matListItemIcon matTooltip="Contact" matTooltipPosition="right">call</mat-icon>
+                <span class="me-4" matListItemTitle *ngIf="isExpanded">Contact</span>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-drawer>
+    
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

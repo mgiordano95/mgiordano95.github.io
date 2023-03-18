@@ -3,25 +3,20 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    
 }
 
-.header {
-    color: var(--body-color);
-    background-color: var(--primary-color);
+.app-header {
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-.content {
-    padding: 1rem 1rem;
+.app-content {
     flex-shrink: 1;
     flex-grow: 1;
-    background-color: var(--body-color);
 }
 
-.footer {
+.app-footer {
     flex-shrink: 0;
     flex-grow: 0;
-    background-color: var(--copyright-color);
+    background-color: var(--mg-copyright-color);
 }

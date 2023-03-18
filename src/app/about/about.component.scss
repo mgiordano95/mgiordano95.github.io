@@ -1,0 +1,20 @@
+.dev-icons {
+    width: 3em;
+}
+
+.button-row {
+    display: table-cell;
+}
+
+.button-row .mat-mdc-button-base {
+    margin: 1rem 0.5rem 0.5rem 0;
+}
+
+.resume-button {
+    color: var(--mg-primary-color-light) !important;
+    border-color: var(--mg-primary-color-light) !important;
+}
+
+.contact-button {
+    background-color: var(--mg-primary-color-light) !important;
+}

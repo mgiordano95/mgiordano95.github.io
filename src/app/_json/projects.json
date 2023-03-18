@@ -1,8 +1,8 @@
 [
     {
-        "id": "C2Py-Transpiler",
-        "name": "C2Py Transpiler (In Progress)",
-        "description": "C to Python Transpiler for the Formal Languages and Compilers exam.",
-        "repository": "https://github.com/mgiordano95/C2Py-transpiler" 
+        "id": "mgiordano95.github.io",
+        "name": "mgiordano95 Github Page",
+        "description": "My Github Page with a collection of open source projects and tools.",
+        "repository": "https://github.com/mgiordano95/mgiordano95.github.io" 
     }
 ]

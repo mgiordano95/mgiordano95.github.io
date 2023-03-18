@@ -1,79 +1,59 @@
 <div class="container-fluid">
-    <div class="row mr-0 ml-0">
-        <div class="col-sm-3 border-bottom">
-            <span class="fs-5">Tools</span>
-            <ul class="nav flex-column">
-                <li class="nav-item" *ngFor="let tool of tools">
-                    <a class="nav-link" href="/projects#{{tool.id}}">{{tool.name}}</a>
-                </li>
-            </ul>
-            <span class="fs-5">Projects</span>
-            <ul class="nav flex-column">
-                <li class="nav-item" *ngFor="let project of projects">
-                    <a class="nav-link" href="/projects#{{project.id}}">{{project.name}}</a>
-                </li>
-            </ul>
-            <span class="fs-5">Collaborative Projects</span>
-            <ul class="nav flex-column">
-                <li class="nav-item" *ngFor="let collaborativeProject of collaborativeProjects">
-                    <a class="nav-link" href="/projects#{{collaborativeProject.id}}">{{collaborativeProject.name}}</a>
-                </li>
-            </ul>
+    <h1>Tools</h1>
+    <div class="row pb-3">
+        <div class="col-sm-4" *ngFor="let tool of tools">
+            <mat-card >
+                <mat-card-header>
+                    <mat-card-title>{{tool.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{tool.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a style="text-decoration:none" href="{{tool.repository}}" target="_blank" matTooltip="Github">
+                        <img width="32" height="32" src="https://cdn.simpleicons.org/github/white"/>&nbsp;
+                    </a>
+                    <!-- <button routerLink="{{tool.repository}}" mat-button>GITHUB</button> -->
+                </mat-card-actions>
+            </mat-card>
         </div>
-        <div class="col-sm-9">
-            <div class="tab-content">
-                <div *ngFor="let tool of tools">
-                    <div id="{{tool.id}}" class="border-bottom">
-                        <span class="fs-5">{{tool.name}}</span>
-                        <p class="fs-6">
-                            <strong>Description:</strong>
-                        </p>
-                        <p class="fs-6">{{tool.description}}</p>
-                        <p class="fs-6">
-                            <strong>Link:</strong>
-                        </p>
-                        <ul>
-                            <li>
-                                <a target="_blank" href="{{tool.repository}}">GitHub Repository</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div *ngFor="let project of projects">
-                    <div id="{{project.id}}" class="border-bottom">
-                        <span class="fs-5">{{project.name}}</span>
-                        <p class="fs-6">
-                            <strong>Description:</strong>
-                        </p>
-                        <p class="fs-6">{{project.description}}</p>
-                        <p class="fs-6">
-                            <strong>Link:</strong>
-                        </p>
-                        <ul>
-                            <li>
-                                <a target="_blank" href="{{project.repository}}">GitHub Repository</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div *ngFor="let collaborativeProject of collaborativeProjects">
-                    <div id="{{collaborativeProject.id}}" class="border-bottom">
-                        <span class="fs-5">{{collaborativeProject.name}}</span>
-                        <p class="fs-6">
-                            <strong>Description:</strong>
-                        </p>
-                        <p class="fs-6">{{collaborativeProject.description}}</p>
-                        <p class="fs-6">
-                            <strong>Link:</strong>
-                        </p>
-                        <ul>
-                            <li>
-                                <a target="_blank" href="{{collaborativeProject.repository}}">GitHub Repository</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <h1>Projects</h1>
+    <div class="row pb-3">
+        <div class="col-sm-4" *ngFor="let project of projects">
+            <mat-card >
+                <mat-card-header>
+                    <mat-card-title>{{project.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{project.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a style="text-decoration:none" href="{{project.repository}}" target="_blank" matTooltip="Github">
+                        <img width="32" height="32" src="https://cdn.simpleicons.org/github/white"/>&nbsp;
+                    </a>
+                    <!-- <button routerLink="{{project.repository}}" mat-button>GITHUB</button> -->
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <h1>Collaborative Projects</h1>
+    <div class="row pb-3">
+        <div class="col-sm-4" *ngFor="let collaborativeProject of collaborativeProjects">
+            <mat-card >
+                <mat-card-header>
+                    <mat-card-title>{{collaborativeProject.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{collaborativeProject.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a style="text-decoration:none" href="{{collaborativeProject.repository}}" target="_blank" matTooltip="Github">
+                        <img width="32" height="32" src="https://cdn.simpleicons.org/github/white"/>&nbsp;
+                    </a>
+                    <!-- <button routerLink="{{collaborativeProject.repository}}" mat-button>GITHUB</button> -->
+                </mat-card-actions>
+            </mat-card>
         </div>
     </div>
 </div>
